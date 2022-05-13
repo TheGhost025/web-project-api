@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('email', models.EmailField(max_length=150)),
                 ('mobile_number', models.CharField(max_length=150)),
                 ('birth', models.DateField()),
-                ('gpa', models.IntegerField(blank=True, null=True)),
+                ('gpa', models.FloatField(blank=True, null=True)),
                 ('gender', models.CharField(choices=[('m', 'Male'), ('f', 'Female')], max_length=1)),
                 ('level', models.IntegerField(choices=[(1, '1'), (2, '2'), (3, '3'), (4, '4')], default=1)),
                 ('status', models.CharField(choices=[('active', 'Active'), ('inactive', 'inactive')], default='active', max_length=10)),
