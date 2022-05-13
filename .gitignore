@@ -1,0 +1,8 @@
+# Virtual enviornment
+venv/
+
+# IntelliJ
+.idea/
+
+# Database auto generated file
+db.sqlite3
