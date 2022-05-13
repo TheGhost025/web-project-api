@@ -7,7 +7,7 @@ class Student(models.Model):
     email = models.EmailField(max_length=150)
     mobile_number = models.CharField(max_length=150)
     birth = models.DateField()
-    gpa = models.FloatField(null=True, blank=True)
+    gpa = models.FhloatField(null=True, blank=True)
     gender = models.CharField(max_length=1, choices=GenderChoices.choices)
     level = models.IntegerField(choices=LevelChoices.choices, default=LevelChoices.FIRST)
     status = models.CharField(max_length=10, choices=StatusChoices.choices, default=StatusChoices.ACTIVE)
